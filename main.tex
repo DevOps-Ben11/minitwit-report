@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumitem, amssymb }
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{bibliography.bib}
+%Tommy's suggestion
+%\usepackage[style=numeric,sorting=none]{biblatex}
+%\addbibresource{Source.bib} 
+\usepackage{courier}
+\usepackage{color}
+\usepackage{listings, xcolor}
+\usepackage{tabularx}
+\usepackage{comment}
+\usepackage{verbatim}
+\usepackage{placeins}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{url}
+\renewcommand{\baselinestretch}{1.2}
+\usepackage{subcaption} 
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{csvsimple}
+\usepackage[legalpaper, margin=1in]{geometry}
+%\usepackage{natbib} %Imports biblatex package
+%\addbibresource{biblografi.bib} %Import the bibliography file
+\usepackage{hyperref}
+\hypersetup{pdfborder = {0 0 0}}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{scalerel}
+\usepackage{makecell}
+\usepackage{tabularx}
+\lstset{
+    tabsize = 4, %% set tab space width
+    showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+    numbers = left, %% display line numbers on the left
+    commentstyle = \color{teal}, %% set comment color
+    keywordstyle = \color{blue}, %% set keyword color
+    numberstyle = \color{red},
+    stringstyle = \color{red}, %% set string color
+    rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+    basicstyle = \small \ttfamily , %% set listing font and size
+    breaklines = true, %% enable line breaking
+    numberstyle = \tiny
+}
+
+\title{Minitwit: a DevOps report}
+\author{Mathias Larsen, Andreas , Rokas Kasperavičius}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\input{introduction}
+
+
+
+
+\end{document}
