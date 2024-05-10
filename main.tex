@@ -4,7 +4,7 @@
 \usepackage{enumitem, amssymb }
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-\graphicspath{ {./images/} }
+\graphicspath{ {./img/} }
 \usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 %Tommy's suggestion
@@ -39,6 +39,7 @@
 \usepackage{scalerel}
 \usepackage{makecell}
 \usepackage{tabularx}
+\usepackage{titling}
 \lstset{
     tabsize = 4, %% set tab space width
     showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
@@ -53,20 +54,38 @@
     numberstyle = \tiny
 }
 
-\title{Minitwit: a DevOps report}
-\author{Mathias Larsen, Andreas , Rokas Kasperavičius}
-\date{\today}
+\title{%
+\includegraphics[width=345.0pt]{ITU_logo_UK jpg.jpg}
+\vspace{0.5cm}\\
+{\Huge \textbf{DevOps, Software Evolution and Software Maintenance}}\\
+\vspace{0.5cm}
+Course code: KSDSESM1KU
+}
+
+\author{Andreas Just Petersen - anjp@itu.dk \\ Mathias M. A. Larsen - mathl@itu.dk \\ Rokas Kasperavicius - rokk@itu.dk \\ Matteo Claude Philippe Faura Behague - mcfa@itu.dk \\ Viktoria [...] - anam@itu.dk}
+
+\vspace{1cm}
+\date{\textbf{Spring 2024}\\
+\href{https://github.com/DevOps-Ben11/minitwit}{\textbf{Github page}: https://github.com/DevOps-Ben11/minitwit}\\
+\href{http://minitwit.fun/public}{\textbf{Minitwit page}: http://minitwit.fun/public}}
+
 
 \begin{document}
 
-\maketitle
+\begin{titlingpage}
+    \maketitle
+\end{titlingpage}
 
 \newpage
 \tableofcontents
 \newpage
 
-\input{introduction}
-\input{conclusion}
+\include{Introduction}
+\include{System_Perspective}
+\include{Process_perspective}
+\include{Lessons_Learned_Perspective}
+\include{Conclusion}
+
 
 
 
